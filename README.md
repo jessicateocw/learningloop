@@ -2,6 +2,8 @@
 
 [DEMO](https://jessicateocw.github.io/learningloop)
 
+localhost working, Having issue with webhooks connection.
+
 Learning about stripe integration and document reading.
 All code is found and learnt from
 (https://stripe.com/docs)
