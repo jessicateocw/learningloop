@@ -87,6 +87,23 @@ app.post("/webhook", async (req, res) => {
     event = req.body;
   }
 
+  if (event.type === "checkout.session.expired") {
+    console.log(`🔔  Payment issue!`);
+
+    // Note: If you need access to the line items, for instance to
+    // automate fullfillment based on the the ID of the Price, you'll
+    // need to refetch the Checkout Session here, and expand the line items:
+    //
+    const session = await stripe.checkout.sessions.retrieve(
+      "cs_test_KdjLtDPfAjT1gq374DMZ3rHmZ9OoSlGRhyz8yTypH76KpN4JXkQpD2G0",
+      {
+        expand: ["line_items"],
+      }
+    );
+
+    const lineItems = session.line_items;
+  }
+
   if (event.type === "checkout.session.completed") {
     console.log(`🔔  Payment received!`);
 
