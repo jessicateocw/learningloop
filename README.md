@@ -1,10 +1,12 @@
-# Main Takeaway
+# Learning Loop: Main Takeaway
+
+[DEMO](https://jessicateocw.github.io/learningloop)
 
 Learning about stripe integration and document reading.
 All code is found and learnt from
 (https://stripe.com/docs)
 
-# Accept a payment with Stripe Checkout
+## Accept a payment with Stripe Checkout
 
 This integration shows you how to accept payments with Stripe
 [Checkout](https://stripe.com/docs/checkout).
@@ -41,4 +43,4 @@ Picked server:
 Picked client:
 
 - [html](./client/html)
-"# learingloop" 
+  "# learingloop"
